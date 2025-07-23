@@ -1,16 +1,21 @@
+using TMPro;
 using UnityEngine;
 
 public class HealthText : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private Health health;
+    [SerializeField] private TextMeshProUGUI text;
+
     void Start()
     {
-        
+        if (health != null)
+        {
+            health.OnHealthChanged += UpdateHealthBar;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateHealthBar(int currentHealth, int maxHealth)
     {
-        
+        text.text = $"{currentHealth} / {maxHealth}";
     }
 }
