@@ -2,10 +2,10 @@ using UnityEngine;
 
 public abstract class Projectile : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float lifetime = 3f;
-    private Transform target;
+    [SerializeField] protected int damage = 10;
+    [SerializeField] protected float speed = 10f;
+    [SerializeField] protected float lifetime = 3f;
+    protected Transform target;
 
     private void Start()
     {
