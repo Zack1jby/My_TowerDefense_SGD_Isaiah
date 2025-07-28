@@ -42,10 +42,5 @@ public abstract class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void ReachTarget()
-    {
-        Vector3 direction = (target.position - transform.position).normalized;
-        transform.position += direction * speed * Time.deltaTime;
-        transform.forward = direction;
-    }
+    protected abstract void ReachTarget();
 }
