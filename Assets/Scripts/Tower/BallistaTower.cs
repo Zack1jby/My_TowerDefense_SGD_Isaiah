@@ -14,7 +14,7 @@ public class BallistaTower : Tower
         if (projectilePrefab != null)
         {
             GameObject projectileInstace = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-            projectileInstace.GetComponent<Projectile>().SetTarget(target.transform);
+            projectileInstace.GetComponent<ArrowProjectile>().SetTarget(target.transform);
         }
     }
 
