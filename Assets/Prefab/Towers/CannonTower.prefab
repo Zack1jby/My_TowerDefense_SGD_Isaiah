@@ -124,6 +124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9dcbad2ac00d33f4ba2d3f623eb3608c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7598815526166492293}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9dcbad2ac00d33f4ba2d3f623eb3608c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7164245627205992128}
   m_SourcePrefab: {fileID: 100100000, guid: 9dcbad2ac00d33f4ba2d3f623eb3608c, type: 3}
 --- !u!4 &2555358118302517547 stripped
 Transform:
@@ -156,3 +159,17 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7164245627205992128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899654088992314257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbbcd46679f8b14ea58962f60d28ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireCooldown: 1
+  cannonBallPrefab: {fileID: 0}
