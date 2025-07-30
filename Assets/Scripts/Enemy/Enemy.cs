@@ -22,6 +22,12 @@ public class Enemy : MonoBehaviour
         animator.SetBool(animatorParam_IsWalking, true);
     }
 
+    public void Initialize(Transform inputEndPoint)
+    {
+        endpoint = inputEndPoint;
+        agent.SetDestination(endpoint.position);
+    }
+
     // Update is called once per frame
     void Update()
     {
