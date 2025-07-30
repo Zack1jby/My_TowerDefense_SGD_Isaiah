@@ -2448,8 +2448,8 @@ MonoBehaviour:
       m_Action: Place Tower
       m_Flags: 0
     m_Flags: 0
+  towerPlacementHeightOffset: 0.2
   isPlacingTower: 0
-  placementHeightOffset: 0.2
 --- !u!1001 &484516472
 PrefabInstance:
   m_ObjectHideFlags: 0
