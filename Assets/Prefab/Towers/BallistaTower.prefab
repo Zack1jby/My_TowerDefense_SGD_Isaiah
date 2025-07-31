@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4626af2c8267ee469403c4b84401533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireCooldown: 1
+  FireCooldown: 0.75
   arrowPrefab: {fileID: 1948227685729515874, guid: cd0085aed90270b4791770a86ebdbc8b, type: 3}
   arrowHead: {fileID: 3859591026094031875}
 --- !u!4 &2117969050828163963 stripped
