@@ -59,6 +59,11 @@ public class Enemy : MonoBehaviour
         return currentHealth <= 0;
     }
 
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
     public void TakeDamage(int receivedDamage)
     {
         currentHealth -= receivedDamage;
