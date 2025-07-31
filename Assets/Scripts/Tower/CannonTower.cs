@@ -4,13 +4,13 @@ using System.Collections;
 public class CannonTower : Tower
 {
     [SerializeField] private GameObject cannonBallPrefab;
-    [SerializeField] private Transform barrellHead;
+    [SerializeField] private Transform barrelHead;
     [SerializeField] private float effectsTime = .05f;
     private Light barrelHeadLight;
 
     private void Awake()
     {
-        barrelHeadLight = barrellHead.GetComponent<Light>();
+        barrelHeadLight = barrelHead.GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class CannonTower : Tower
         if (cannonBallPrefab != null)
         {
             StartCoroutine(FireAtEffects());
-            GameObject projectileInstace = Instantiate(cannonBallPrefab, barrellHead.position, Quaternion.identity);
+            GameObject projectileInstace = Instantiate(cannonBallPrefab, barrelHead.position, Quaternion.identity);
             projectileInstace.GetComponent<CannonBallProjectile>().SetTarget(target.transform);
         }
     }
