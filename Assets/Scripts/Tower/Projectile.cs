@@ -29,14 +29,14 @@ public abstract class Projectile : MonoBehaviour
         target = inputTarget;
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.transform == target)
         {
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
-                Destroy(enemy.gameObject);
+                enemy.TakeDamage(damage);
             }
         }
         Destroy(gameObject);
