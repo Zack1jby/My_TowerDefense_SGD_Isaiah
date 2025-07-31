@@ -20,6 +20,19 @@ public class CannonTower : Tower
 
     protected override Enemy GetTargetEnemy()
     {
-        return null;
+        ClearDestroyedEnemies();
+
+        Enemy healthiestEnemy = null;
+        int highestCurrentHealth = int.MinValue;
+        foreach (Enemy enemy in enemiesInRange)
+        {
+            int enemyCurrentHealth = enemy.GetCurrentHealth();
+            if (enemyCurrentHealth > highestCurrentHealth)
+            {
+                highestCurrentHealth = enemyCurrentHealth;
+                healthiestEnemy = enemy;
+            }
+        }
+        return healthiestEnemy;
     }
 }
