@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
 
     public bool IsDead()
     {
-        return currentHealth > 0;
+        return currentHealth <= 0;
     }
 
     public void TakeDamage(int receivedDamage)
