@@ -3,6 +3,8 @@ using UnityEngine;
 public class CannonTower : Tower
 {
     [SerializeField] private GameObject cannonBallPrefab;
+    [SerializeField] private Transform barrellHead;
+
     // Update is called once per frame
     protected override void Update()
     {

@@ -212,3 +212,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FireCooldown: 1
   cannonBallPrefab: {fileID: 5764509587141690661, guid: 8d026fa3610434b499fcc63fbc926cad, type: 3}
+  barrellHead: {fileID: 5561590388636838800}
