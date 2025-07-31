@@ -8,11 +8,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform endpoint;
     [SerializeField] private string animatorParam_IsWalking;
     [SerializeField] private int damage;
+    [SerializeField] private int maxHealth = 10;
+    private int currentHealth;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,5 +48,15 @@ public class Enemy : MonoBehaviour
         animator.SetBool(animatorParam_IsWalking, false);
         GameManager.Instance.playerHealth.TakeDamage(damage);
         Destroy(gameObject);
+    }
+
+    public bool IsDead()
+    {
+        return currentHealth > 0;
+    }
+
+    public void TakeDamage(int receivedDamage)
+    {
+        currentHealth -= receivedDamage;
     }
 }
