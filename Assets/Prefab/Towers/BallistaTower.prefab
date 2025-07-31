@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FireCooldown: 1
   arrowPrefab: {fileID: 1948227685729515874, guid: cd0085aed90270b4791770a86ebdbc8b, type: 3}
+  arrowHead: {fileID: 3859591026094031875}
 --- !u!4 &2117969050828163963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9dcbad2ac00d33f4ba2d3f623eb3608c, type: 3}
