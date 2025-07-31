@@ -1,9 +1,17 @@
 using UnityEngine;
+using System.Collections;
 
 public class CannonTower : Tower
 {
     [SerializeField] private GameObject cannonBallPrefab;
     [SerializeField] private Transform barrellHead;
+    [SerializeField] private float effectsTime = .05f;
+    private Light barrelHeadLight;
+
+    private void Awake()
+    {
+        barrelHeadLight = barrellHead.GetComponent<Light>();
+    }
 
     // Update is called once per frame
     protected override void Update()
@@ -15,9 +23,17 @@ public class CannonTower : Tower
     {
         if (cannonBallPrefab != null)
         {
+            StartCoroutine(FireAtEffects());
             GameObject projectileInstace = Instantiate(cannonBallPrefab, barrellHead.position, Quaternion.identity);
             projectileInstace.GetComponent<CannonBallProjectile>().SetTarget(target.transform);
         }
+    }
+
+    private IEnumerator FireAtEffects()
+    {
+        barrelHeadLight.enabled = true;
+        yield return new WaitForSeconds(effectsTime);
+        barrelHeadLight.enabled = false;
     }
 
     protected override Enemy GetTargetEnemy()
