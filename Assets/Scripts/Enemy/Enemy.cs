@@ -41,6 +41,10 @@ public class Enemy : MonoBehaviour
                 ReachedEnd();
             }
         }
+        if (IsDead())
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void ReachedEnd()
