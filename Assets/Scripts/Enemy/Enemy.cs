@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     private void ReachedEnd()
     {
         animator.SetBool(animatorParam_IsWalking, false);
-        GameManager.Instance.playerHealth.TakeDamage(damage);
+        GameManager.Instance.PlayerHealth.TakeDamage(damage);
         Destroy(gameObject);
     }
 
@@ -73,6 +73,6 @@ public class Enemy : MonoBehaviour
 
     public void DropCurrency()
     {
-        GameManager.Instance.currencyManager.UpdateCurrency(currencyDropAmount);
+        GameManager.Instance.PlayerCurrency.UpdateCurrency(currencyDropAmount);
     }
 }

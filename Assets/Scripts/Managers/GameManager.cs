@@ -4,8 +4,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public Health playerHealth;
-    public CurrencyManager currencyManager;
+    public Health PlayerHealth;
+    public CurrencyManager PlayerCurrency;
 
     private void Awake()
     {
@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        playerHealth = GetComponent<Health>();
-        currencyManager = GetComponent<CurrencyManager>();
+        PlayerHealth = GetComponent<Health>();
+        PlayerCurrency = GetComponent<CurrencyManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
