@@ -2292,6 +2292,7 @@ GameObject:
   - component: {fileID: 471486148}
   - component: {fileID: 471486151}
   - component: {fileID: 471486152}
+  - component: {fileID: 471486153}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2586,6 +2587,19 @@ MonoBehaviour:
     m_Flags: 0
   towerPlacementHeightOffset: 0.2
   isPlacingTower: 0
+--- !u!114 &471486153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471486147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2f8de3aa2c8cb4a8a822c2050667d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyText: {fileID: 461629870}
 --- !u!1001 &484516472
 PrefabInstance:
   m_ObjectHideFlags: 0
