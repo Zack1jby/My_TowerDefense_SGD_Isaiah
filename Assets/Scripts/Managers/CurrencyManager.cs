@@ -8,10 +8,10 @@ public class CurrencyManager : MonoBehaviour
 
     private void Awake()
     {
-        UpdateCurrencyText(0);
+        UpdateCurrency(0);
     }
 
-    public void UpdateCurrencyText(int currencyAdded)
+    public void UpdateCurrency(int currencyAdded)
     {
         currencyHeld += currencyAdded;
         currencyText.text = $"${currencyHeld}";
