@@ -1,16 +1,19 @@
 using UnityEngine;
+using TMPro;
 
 public class CurrencyManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TextMeshProUGUI currencyText;
+    private int currencyHeld;
+
+    private void Awake()
     {
-        
+        UpdateCurrencyText(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateCurrencyText(int currencyAdded)
     {
-        
+        currencyHeld += currencyAdded;
+        currencyText.text = $"${currencyHeld}";
     }
 }
