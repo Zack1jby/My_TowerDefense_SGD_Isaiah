@@ -114,6 +114,8 @@ MonoBehaviour:
   endpoint: {fileID: 0}
   animatorParam_IsWalking: IsWalking
   damage: 1
+  maxHealth: 10
+  currencyDropAmount: 10
 --- !u!95 &5916726708920724800
 Animator:
   serializedVersion: 7

@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int damage;
     [SerializeField] private int maxHealth = 10;
     private int currentHealth;
+    [SerializeField] private int currencyDropAmount;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class Enemy : MonoBehaviour
         }
         if (IsDead())
         {
+            DropCurrency();
             Destroy(gameObject);
         }
     }
@@ -67,5 +69,10 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int receivedDamage)
     {
         currentHealth -= receivedDamage;
+    }
+
+    public void DropCurrency()
+    {
+        GameManager.Instance.currencyManager.UpdateCurrency(currencyDropAmount);
     }
 }
