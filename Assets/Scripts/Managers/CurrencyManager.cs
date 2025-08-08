@@ -16,4 +16,9 @@ public class CurrencyManager : MonoBehaviour
         currencyHeld += currencyAdded;
         currencyText.text = $"${currencyHeld}";
     }
+
+    public int GetCurrencyHeld()
+    {
+        return currencyHeld;
+    }
 }

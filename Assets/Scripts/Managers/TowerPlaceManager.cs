@@ -55,7 +55,7 @@ public class TowerPlaceManager : MonoBehaviour
 
     public void StartPlacing(GameObject towerPrefab)
     {
-        if (currentTowerPrefabToSpawn != towerPrefab)
+        if (CanAffordTowerCost(towerPrefab) && (currentTowerPrefabToSpawn != towerPrefab))
         {
             isPlacingTower = true;
             currentTowerPrefabToSpawn = towerPrefab;
@@ -74,8 +74,14 @@ public class TowerPlaceManager : MonoBehaviour
         {
             Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity);
             Destroy(towerPreview);
+            GameManager.Instance.PlayerCurrency.UpdateCurrency(-currentTowerPrefabToSpawn.GetComponent<Tower>().GetTowerCost());
             currentTowerPrefabToSpawn = null;
             isPlacingTower = false;
         }
+    }
+
+    private bool CanAffordTowerCost(GameObject towerPrefab)
+    {
+        return GameManager.Instance.PlayerCurrency.GetCurrencyHeld() >= towerPrefab.GetComponent<Tower>().GetTowerCost();
     }
 }

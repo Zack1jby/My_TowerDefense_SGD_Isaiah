@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireCooldown: 0.75
+  towerCost: 100
   arrowPrefab: {fileID: 1948227685729515874, guid: cd0085aed90270b4791770a86ebdbc8b, type: 3}
   arrowHead: {fileID: 3859591026094031875}
 --- !u!4 &2117969050828163963 stripped

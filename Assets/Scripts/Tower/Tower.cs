@@ -8,6 +8,7 @@ public abstract class Tower : MonoBehaviour
 
     protected float currentFireCooldown = 0.0f;
     protected List<Enemy> enemiesInRange = new List<Enemy>();
+    [SerializeField] protected int towerCost;
 
     protected virtual void Update()
     {
@@ -51,6 +52,11 @@ public abstract class Tower : MonoBehaviour
         {
             enemiesInRange.Remove(enemy);
         }
+    }
+
+    public int GetTowerCost()
+    {
+        return towerCost;
     }
 
 }
