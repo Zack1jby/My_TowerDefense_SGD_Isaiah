@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TowerPrefabHolder : MonoBehaviour
+public class BuildTowerButton : MonoBehaviour
 {
     [SerializeField] private GameObject heldTowerPrefab;
 
