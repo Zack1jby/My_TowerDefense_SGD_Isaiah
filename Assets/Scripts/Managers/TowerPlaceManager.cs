@@ -74,14 +74,19 @@ public class TowerPlaceManager : MonoBehaviour
         {
             Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity);
             Destroy(towerPreview);
-            GameManager.Instance.PlayerCurrency.UpdateCurrency(-currentTowerPrefabToSpawn.GetComponent<Tower>().GetTowerCost());
+            GameManager.Instance.PlayerCurrency.UpdateCurrency(-GetTowerCost(currentTowerPrefabToSpawn));
             currentTowerPrefabToSpawn = null;
             isPlacingTower = false;
         }
     }
 
+    private int GetTowerCost(GameObject towerPrefab)
+    {
+        return towerPrefab.GetComponent<Tower>().GetTowerCost();
+    }
+
     private bool CanAffordTowerCost(GameObject towerPrefab)
     {
-        return GameManager.Instance.PlayerCurrency.GetCurrencyHeld() >= towerPrefab.GetComponent<Tower>().GetTowerCost();
+        return GameManager.Instance.PlayerCurrency.GetCurrencyHeld() >= GetTowerCost(towerPrefab);
     }
 }
