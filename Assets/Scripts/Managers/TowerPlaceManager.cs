@@ -64,6 +64,7 @@ public class TowerPlaceManager : MonoBehaviour
                 Destroy(towerPreview);
             }
             towerPreview = Instantiate(currentTowerPrefabToSpawn);
+            towerPreview.GetComponent<SphereCollider>().enabled = false;
         }
     }
 
