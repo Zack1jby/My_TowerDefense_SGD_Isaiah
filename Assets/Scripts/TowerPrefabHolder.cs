@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class TowerPrefabHolder : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject heldTowerPrefab;
 
-    // Update is called once per frame
-    void Update()
+    public GameObject GetHeldTowerPrefab()
     {
-        
+        return heldTowerPrefab;
     }
 }
