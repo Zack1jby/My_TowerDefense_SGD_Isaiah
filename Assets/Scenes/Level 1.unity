@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 35855396}
   - component: {fileID: 35855395}
   - component: {fileID: 35855394}
+  - component: {fileID: 35855397}
   m_Layer: 5
   m_Name: CatapultButton
   m_TagString: Untagged
@@ -302,6 +303,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35855392}
   m_CullTransparentMesh: 1
+--- !u!114 &35855397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35855392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ee5099000f2d64c8e4323748c442d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heldTowerPrefab: {fileID: 0}
+  buildButtonText: {fileID: 728070839}
 --- !u!1001 &56445635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1244,6 +1259,7 @@ GameObject:
   - component: {fileID: 200695168}
   - component: {fileID: 200695167}
   - component: {fileID: 200695166}
+  - component: {fileID: 200695169}
   m_Layer: 5
   m_Name: TurrentButton
   m_TagString: Untagged
@@ -1353,6 +1369,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200695164}
   m_CullTransparentMesh: 1
+--- !u!114 &200695169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200695164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ee5099000f2d64c8e4323748c442d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heldTowerPrefab: {fileID: 0}
+  buildButtonText: {fileID: 1028055633}
 --- !u!1001 &221674159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2431,6 +2461,7 @@ GameObject:
   - component: {fileID: 471486151}
   - component: {fileID: 471486152}
   - component: {fileID: 471486153}
+  - component: {fileID: 471486154}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2739,6 +2770,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyText: {fileID: 461629870}
+--- !u!114 &471486154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471486147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cb841169aa3964985e76084703fd1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &484516472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5810,6 +5853,7 @@ GameObject:
   - component: {fileID: 1541238289}
   - component: {fileID: 1541238288}
   - component: {fileID: 1541238287}
+  - component: {fileID: 1541238290}
   m_Layer: 5
   m_Name: CannonButton
   m_TagString: Untagged
@@ -5931,6 +5975,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541238285}
   m_CullTransparentMesh: 1
+--- !u!114 &1541238290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541238285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ee5099000f2d64c8e4323748c442d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heldTowerPrefab: {fileID: 2899654088992314257, guid: 831c3850b0176314594d5826add696c8, type: 3}
+  buildButtonText: {fileID: 854198515}
 --- !u!1 &1542917186
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,6 +6777,7 @@ GameObject:
   - component: {fileID: 1730031456}
   - component: {fileID: 1730031455}
   - component: {fileID: 1730031454}
+  - component: {fileID: 1730031457}
   m_Layer: 5
   m_Name: BallistaButton
   m_TagString: Untagged
@@ -6840,6 +6899,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730031452}
   m_CullTransparentMesh: 1
+--- !u!114 &1730031457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730031452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ee5099000f2d64c8e4323748c442d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heldTowerPrefab: {fileID: 1598594308553970113, guid: f9c7af623ededba46b0513c1e4ad367f, type: 3}
+  buildButtonText: {fileID: 124439882}
 --- !u!1001 &1741450277
 PrefabInstance:
   m_ObjectHideFlags: 0
