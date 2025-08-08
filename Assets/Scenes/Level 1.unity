@@ -2782,6 +2782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cb841169aa3964985e76084703fd1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buildTowerButtons:
+  - {fileID: 1730031457}
+  - {fileID: 1541238290}
 --- !u!1001 &484516472
 PrefabInstance:
   m_ObjectHideFlags: 0

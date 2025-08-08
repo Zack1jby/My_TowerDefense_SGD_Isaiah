@@ -1,16 +1,30 @@
 using UnityEngine;
+using System.Collections.Generic;
+using TMPro;
 
 public class InterfaceManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private List<BuildTowerButton> buildTowerButtons;
+
+    private void Awake()
     {
-        
+        PrepareAllBuildButtonTexts(buildTowerButtons);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PrepareBuildButtonText(BuildTowerButton buildTowerButton)
     {
-        
+        TextMeshProUGUI buildButtonText = buildTowerButton.GetBuildButtonText();
+        GameObject towerPrefab = buildTowerButton.GetHeldTowerPrefab();
+        int towerPrefabCurrencyCost = towerPrefab.GetComponent<Tower>().GetTowerCost();
+
+        buildButtonText.text = $"${towerPrefabCurrencyCost}";
+    }
+
+    private void PrepareAllBuildButtonTexts(List<BuildTowerButton> allBuildTowerButtons)
+    {
+        foreach (BuildTowerButton buildTowerButton in allBuildTowerButtons)
+        {
+            PrepareBuildButtonText(buildTowerButton);
+        }
     }
 }
