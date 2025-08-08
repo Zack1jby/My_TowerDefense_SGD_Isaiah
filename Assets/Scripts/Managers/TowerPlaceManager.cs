@@ -77,6 +77,5 @@ public class TowerPlaceManager : MonoBehaviour
             currentTowerPrefabToSpawn = null;
             isPlacingTower = false;
         }
-        ;
     }
 }
