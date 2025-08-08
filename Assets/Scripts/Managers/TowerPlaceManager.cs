@@ -69,13 +69,13 @@ public class TowerPlaceManager : MonoBehaviour
 
     private void OnPlaceTower(InputAction.CallbackContext context)
     {
-        if (!isPlacingTower && isTileSelected)
+        if (isPlacingTower && isTileSelected)
         {
-            return;
+            Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity);
+            Destroy(towerPreview);
+            currentTowerPrefabToSpawn = null;
+            isPlacingTower = false;
         }
-        Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity);
-        Destroy(towerPreview);
-        currentTowerPrefabToSpawn = null;
-        isPlacingTower = false;
+        ;
     }
 }
