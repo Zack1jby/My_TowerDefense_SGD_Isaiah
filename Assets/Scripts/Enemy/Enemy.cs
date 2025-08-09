@@ -3,37 +3,39 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    private NavMeshAgent agent;
-    private Animator animator;
-    [SerializeField] private Transform endpoint;
-    [SerializeField] private string animatorParam_IsWalking;
-    [SerializeField] private int damage;
-    [SerializeField] private int maxHealth = 10;
-    private int currentHealth;
-    [SerializeField] private int currencyDropAmount;
+    protected NavMeshAgent agent;
+    protected Animator animator;
+    [SerializeField] protected Transform endPoint;
+    [SerializeField] protected string animatorParam_IsWalking;
+    [SerializeField] protected float movementSpeed = 3.5f;
+    [SerializeField] protected int damage = 1;
+    [SerializeField] protected int maxHealth = 10;
+    protected int currentHealth;
+    [SerializeField] protected int currencyDropAmount;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
+        agent.speed = movementSpeed;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
-        agent.SetDestination(endpoint.position);
+        agent.SetDestination(endPoint.position);
         animator.SetBool(animatorParam_IsWalking, true);
     }
 
     public void Initialize(Transform inputEndPoint)
     {
-        endpoint = inputEndPoint;
-        agent.SetDestination(endpoint.position);
+        endPoint = inputEndPoint;
+        agent.SetDestination(endPoint.position);
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
@@ -49,7 +51,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void ReachedEnd()
+    protected virtual void ReachedEnd()
     {
         animator.SetBool(animatorParam_IsWalking, false);
         GameManager.Instance.PlayerHealth.TakeDamage(damage);

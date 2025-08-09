@@ -5,7 +5,9 @@ using System.Collections.Generic;
 [System.Serializable]
 public struct SpawnData
 {
-    public GameObject enemyToSpawn;
+    public GameObject EnemyToSpawn;
+    public bool CanHoldEnemies;
+    public List<GameObject> HeldEnemies;
     public float TimeBeforeSpawn;
     public Transform SpawnPoint;
     public Transform EndPoint;
@@ -45,7 +47,14 @@ public class WaveManager : MonoBehaviour
             foreach (SpawnData currentEnemyToSpawn in currentWave.EnemyData)
             {
                 yield return new WaitForSeconds(currentEnemyToSpawn.TimeBeforeSpawn);
-                SpawnEnemy(currentEnemyToSpawn.enemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint);
+                if (currentEnemyToSpawn.CanHoldEnemies)
+                {
+                    SpawnCarrierEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint, currentEnemyToSpawn.HeldEnemies);
+                }
+                else 
+                {
+                    SpawnEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint);
+                }
             }
         }
     }
@@ -55,5 +64,12 @@ public class WaveManager : MonoBehaviour
         GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         Enemy enemy = enemyInstance.GetComponent<Enemy>();
         enemy.Initialize(endPoint);
+    }
+
+    public void SpawnCarrierEnemy(GameObject enemyPrefab, Transform spawnPoint, Transform endPoint, List<GameObject> heldEnemies)
+    {
+        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        CarrierEnemy enemy = enemyInstance.GetComponent<CarrierEnemy>();
+        enemy.Initialize(endPoint, heldEnemies);
     }
 }
