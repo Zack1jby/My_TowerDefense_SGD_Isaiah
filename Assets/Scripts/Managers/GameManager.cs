@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     public Health PlayerHealth;
     public CurrencyManager PlayerCurrency;
+    public WaveManager WaveTracker;
+    public ResultsManager ResultsTracker;
 
     private void Awake()
     {
@@ -20,6 +22,8 @@ public class GameManager : MonoBehaviour
         }
         PlayerHealth = GetComponent<Health>();
         PlayerCurrency = GetComponent<CurrencyManager>();
+        WaveTracker = GetComponent<WaveManager>();
+        ResultsTracker = GetComponent<ResultsManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
