@@ -72,4 +72,9 @@ public class WaveManager : MonoBehaviour
         CarrierEnemy enemy = enemyInstance.GetComponent<CarrierEnemy>();
         enemy.Initialize(endPoint, heldEnemies);
     }
+
+    public int GetWaveCount()
+    {
+        return levelWaveData.Count;
+    }
 }
