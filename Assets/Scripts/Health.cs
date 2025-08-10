@@ -32,4 +32,14 @@ public class Health : MonoBehaviour
         }
         Debug.Log($"Current Health: {currentHealth}");
     }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
 }
