@@ -7,12 +7,10 @@ public class Health : MonoBehaviour
 
     [SerializeField] private int maxHealth = 20;
     private int currentHealth;
-    private bool isDead;
 
     private void Awake()
     {
         currentHealth = maxHealth;
-        isDead = false;
     }
 
     private void Start()
