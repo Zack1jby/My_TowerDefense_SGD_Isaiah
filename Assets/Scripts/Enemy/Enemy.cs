@@ -24,7 +24,6 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Start()
     {
-        agent.SetDestination(endPoint.position);
         animator.SetBool(animatorParam_IsWalking, true);
     }
 
@@ -54,8 +53,13 @@ public class Enemy : MonoBehaviour
     protected virtual void ReachedEnd()
     {
         animator.SetBool(animatorParam_IsWalking, false);
-        GameManager.Instance.PlayerHealth.TakeDamage(damage);
+        DealDamageToPlayer();
         Destroy(gameObject);
+    }
+
+    protected void DealDamageToPlayer()
+    {
+        GameManager.Instance.PlayerHealth.TakeDamage(damage);
     }
 
     public bool IsDead()

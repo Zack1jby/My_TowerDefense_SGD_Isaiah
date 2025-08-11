@@ -5,12 +5,12 @@ public class HorseEnemy : Enemy
 {
     protected override void Start()
     {
-        agent.SetDestination(endPoint.position);
+        return;
     }
 
     protected override void ReachedEnd()
     {
-        GameManager.Instance.PlayerHealth.TakeDamage(damage);
+        DealDamageToPlayer();
         Destroy(gameObject);
     }
 }
