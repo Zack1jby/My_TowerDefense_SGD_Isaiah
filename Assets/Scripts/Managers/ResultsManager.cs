@@ -7,6 +7,7 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] private GameObject gameOverDisplay;
     [SerializeField] private GameObject victoryDisplay;
     [SerializeField] private GameObject resultsDisplay;
+    [SerializeField] private GameObject gameFinishButtons;
     [SerializeField] private TextMeshProUGUI tallyHealthRecordText;
     [SerializeField] private TextMeshProUGUI tallyMoneyRecordText;
     [SerializeField] private TextMeshProUGUI tallyWavesRecordText;
@@ -22,9 +23,10 @@ public class ResultsManager : MonoBehaviour
 
     private void Awake()
     {
-        GameOverDisplay.SetActive(false);
-        VictoryDisplay.SetActive(false);
-        ResultsDisplay.SetActive(false);
+        gameOverDisplay.SetActive(false);
+        victoryDisplay.SetActive(false);
+        resultsDisplay.SetActive(false);
+        gameFinishButtons.SetActive(false);
     }
 
     private void Update()
@@ -41,11 +43,11 @@ public class ResultsManager : MonoBehaviour
     {
         if (isPlayerWinner)
         {
-            VictoryDisplay.SetActive(true);
+            victoryDisplay.SetActive(true);
         }
         else
         {
-            GameOverDisplay.SetActive(true);
+            gameOverDisplay.SetActive(true);
         }
 
         TallyHealthResults();
@@ -53,7 +55,8 @@ public class ResultsManager : MonoBehaviour
         TallyWaveResults();
         TallyRankResults();
 
-        ResultsDisplay.SetActive(true);
+        resultsDisplay.SetActive(true);
+        gameFinishButtons.SetActive(true);
     }
 
     private void TallyHealthResults()

@@ -3181,6 +3181,7 @@ MonoBehaviour:
   gameOverDisplay: {fileID: 1222930944}
   victoryDisplay: {fileID: 198801694}
   resultsDisplay: {fileID: 225349463}
+  gameFinishButtons: {fileID: 1600977055}
   tallyHealthRecordText: {fileID: 1894468856}
   tallyMoneyRecordText: {fileID: 1645817451}
   tallyWavesRecordText: {fileID: 660375420}
