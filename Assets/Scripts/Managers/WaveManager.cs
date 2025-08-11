@@ -23,7 +23,7 @@ public struct WaveData
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] private GameObject enemyContainer;
-    public List<WaveData> levelWaveData;
+    public List<WaveData> currentLevelWaveData;
     private int currentWaveCount;
     private bool isNextWaveReady = true;
     private bool isLevelFinished;
@@ -45,7 +45,7 @@ public class WaveManager : MonoBehaviour
 
     private IEnumerator StartLevelWaves()
     {
-        foreach (WaveData currentWave in levelWaveData)
+        foreach (WaveData currentWave in currentLevelWaveData)
         {
             yield return new WaitUntil(() => isNextWaveReady);
             StartCoroutine(StartWave(currentWave.EnemyData));
@@ -71,7 +71,7 @@ public class WaveManager : MonoBehaviour
 
     public int GetLevelWaveCount()
     {
-        return levelWaveData.Count;
+        return currentLevelWaveData.Count;
     }
 
     private IEnumerator StartWave(List<SpawnData> currentWaveEnemyData)
