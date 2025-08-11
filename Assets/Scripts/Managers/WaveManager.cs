@@ -22,6 +22,7 @@ public struct WaveData
 
 public class WaveManager : MonoBehaviour
 {
+    [SerializeField] private GameObject enemyContainer;
     public List<WaveData> levelWaveData;
     private int currentWaveCount;
     private bool isNextWaveReady = true;
@@ -56,14 +57,14 @@ public class WaveManager : MonoBehaviour
 
     public void SpawnEnemy(GameObject enemyPrefab, Transform spawnPoint, Transform endPoint)
     {
-        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation, enemyContainer.transform);
         Enemy enemy = enemyInstance.GetComponent<Enemy>();
         enemy.Initialize(endPoint);
     }
 
     public void SpawnCarrierEnemy(GameObject enemyPrefab, Transform spawnPoint, Transform endPoint, List<GameObject> heldEnemies)
     {
-        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation, enemyContainer.transform);
         CarrierEnemy enemy = enemyInstance.GetComponent<CarrierEnemy>();
         enemy.Initialize(endPoint, heldEnemies);
     }
@@ -99,5 +100,14 @@ public class WaveManager : MonoBehaviour
     public bool GetIsLevelFinished()
     {
         return isLevelFinished;
+    }
+
+    public void CleanUpEnemies()
+    {
+        Enemy[] enemiesToClean = enemyContainer.GetComponentsInChildren<Enemy>();
+        foreach (Enemy e in enemiesToClean)
+        {
+            Destroy(e.gameObject);
+        }
     }
 }
