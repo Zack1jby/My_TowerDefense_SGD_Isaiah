@@ -23,12 +23,15 @@ public struct WaveData
 public class WaveManager : MonoBehaviour
 {
     public List<WaveData> levelWaveData;
+    private int currentWaveCount;
+    private bool isNextWaveReady = true;
+    private bool isLevelFinished;
 
     void Start()
     {
         StartLevel();
     }
-
+    
     void Update()
     {
         
@@ -36,27 +39,19 @@ public class WaveManager : MonoBehaviour
 
     public void StartLevel()
     {
-        StartCoroutine(StartWave());
+        StartCoroutine(StartLevelWaves());
     }
 
-    private IEnumerator StartWave()
+    private IEnumerator StartLevelWaves()
     {
         foreach (WaveData currentWave in levelWaveData)
         {
-            yield return new WaitForSeconds(currentWave.TimeBeforeWave);
-            foreach (SpawnData currentEnemyToSpawn in currentWave.EnemyData)
-            {
-                yield return new WaitForSeconds(currentEnemyToSpawn.TimeBeforeSpawn);
-                if (currentEnemyToSpawn.CanHoldEnemies)
-                {
-                    SpawnCarrierEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint, currentEnemyToSpawn.HeldEnemies);
-                }
-                else 
-                {
-                    SpawnEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint);
-                }
-            }
+            yield return new WaitUntil(() => isNextWaveReady);
+            StartCoroutine(StartWave(currentWave.EnemyData));
+            currentWaveCount++;
         }
+        yield return new WaitUntil(() => isNextWaveReady);
+        isLevelFinished = true;
     }
 
     public void SpawnEnemy(GameObject enemyPrefab, Transform spawnPoint, Transform endPoint)
@@ -73,8 +68,36 @@ public class WaveManager : MonoBehaviour
         enemy.Initialize(endPoint, heldEnemies);
     }
 
-    public int GetWaveCount()
+    public int GetLevelWaveCount()
     {
         return levelWaveData.Count;
+    }
+
+    private IEnumerator StartWave(List<SpawnData> currentWaveEnemyData)
+    {
+        isNextWaveReady = false;
+        foreach (SpawnData currentEnemyToSpawn in currentWaveEnemyData)
+        {
+            yield return new WaitForSeconds(currentEnemyToSpawn.TimeBeforeSpawn);
+            if (currentEnemyToSpawn.CanHoldEnemies)
+            {
+                SpawnCarrierEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint, currentEnemyToSpawn.HeldEnemies);
+            }
+            else
+            {
+                SpawnEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint);
+            }
+        }
+        isNextWaveReady = true;
+    }
+
+    public int GetCurrentWaveCount()
+    {
+        return currentWaveCount;
+    }
+
+    public bool GetIsLevelFinished()
+    {
+        return isLevelFinished;
     }
 }

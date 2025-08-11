@@ -35,6 +35,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (PlayerHealth.IsDead())
+        {
+            EndCurrentLevel(false);
+        }
+        else if(WaveTracker.GetIsLevelFinished())
+        {
+            EndCurrentLevel(true);
+        }
+    }
+
+    private void EndCurrentLevel(bool isPlayerWinner)
+    {
+        ResultsTracker.SetIsPlayerWinner(isPlayerWinner);
+        ResultsTracker.ShowResults();
     }
 }
