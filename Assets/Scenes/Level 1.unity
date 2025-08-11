@@ -7698,6 +7698,7 @@ GameObject:
   - component: {fileID: 471486153}
   - component: {fileID: 471486154}
   - component: {fileID: 471486155}
+  - component: {fileID: 471486156}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -7721,6 +7722,7 @@ MonoBehaviour:
   PlayerCurrency: {fileID: 0}
   WaveTracker: {fileID: 0}
   ResultsTracker: {fileID: 0}
+  LevelTracker: {fileID: 0}
 --- !u!114 &471486149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7762,15 +7764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyContainer: {fileID: 938676596}
-  levelWaveData:
-  - TimeBeforeWave: 0
-    EnemyData:
-    - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-      CanHoldEnemies: 0
-      HeldEnemies: []
-      TimeBeforeSpawn: 0
-      SpawnPoint: {fileID: 247994881}
-      EndPoint: {fileID: 997166722}
 --- !u!114 &471486152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7854,6 +7847,64 @@ MonoBehaviour:
   tallyMoneyRecordText: {fileID: 1909993051}
   tallyWavesRecordText: {fileID: 1895081786}
   resultsRankText: {fileID: 968884581}
+--- !u!114 &471486156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471486147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0801f79e09799647b1e814916133bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelList:
+  - LevelGrid: {fileID: 2144130144}
+    LevelWaveData:
+    - TimeBeforeWave: 0
+      EnemyData:
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 247994881}
+        EndPoint: {fileID: 997166722}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 247994881}
+        EndPoint: {fileID: 997166722}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 247994881}
+        EndPoint: {fileID: 997166722}
+  - LevelGrid: {fileID: 875355935}
+    LevelWaveData:
+    - TimeBeforeWave: 0
+      EnemyData:
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+  navMeshSurface: {fileID: 508253260}
 --- !u!1001 &478139193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37884,8 +37935,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1873580356}
   - {fileID: 1319277218}
+  - {fileID: 1873580356}
   m_Father: {fileID: 956666252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2144675478

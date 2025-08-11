@@ -23,14 +23,14 @@ public struct WaveData
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] private GameObject enemyContainer;
-    public List<WaveData> currentLevelWaveData;
+    private List<WaveData> currentLevelWaveData;
     private int currentWaveCount;
     private bool isNextWaveReady = true;
     private bool isLevelFinished;
 
     void Start()
     {
-        StartLevel();
+        
     }
     
     void Update()
@@ -38,8 +38,9 @@ public class WaveManager : MonoBehaviour
         
     }
 
-    public void StartLevel()
+    public void StartWaves(List<WaveData> levelWaveData)
     {
+        currentLevelWaveData = levelWaveData;
         StartCoroutine(StartLevelWaves());
     }
 

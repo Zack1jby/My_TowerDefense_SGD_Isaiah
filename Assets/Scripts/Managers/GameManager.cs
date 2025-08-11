@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
     public CurrencyManager PlayerCurrency;
     public WaveManager WaveTracker;
     public ResultsManager ResultsTracker;
+    public LevelManager LevelTracker;
 
     private void Awake()
     {
@@ -24,12 +26,14 @@ public class GameManager : MonoBehaviour
         PlayerCurrency = GetComponent<CurrencyManager>();
         WaveTracker = GetComponent<WaveManager>();
         ResultsTracker = GetComponent<ResultsManager>();
+        LevelTracker = GetComponent<LevelManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        ClearLevels();
+        BuildLevel(0);
     }
 
     // Update is called once per frame
@@ -43,6 +47,19 @@ public class GameManager : MonoBehaviour
         {
             EndCurrentLevel(true);
         }
+    }
+
+    private void BuildLevel(int index)
+    {
+        List<WaveData> levelWaveData = LevelTracker.GetLevelDataListItem(index).LevelWaveData;
+
+        LevelTracker.BuildLevelGrid(index);
+        WaveTracker.StartWaves(levelWaveData);
+    }
+
+    private void ClearLevels()
+    {
+        LevelTracker.TurnOffAllLevelGrids();
     }
 
     private void EndCurrentLevel(bool isPlayerWinner)

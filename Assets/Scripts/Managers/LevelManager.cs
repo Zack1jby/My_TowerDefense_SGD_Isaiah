@@ -1,16 +1,50 @@
 using UnityEngine;
+using System.Collections.Generic;
+using Unity.AI.Navigation;
+
+[System.Serializable]
+public struct LevelData
+{
+    public GameObject LevelGrid;
+    public List<WaveData> LevelWaveData;
+}
 
 public class LevelManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private List<LevelData> LevelList;
+    [SerializeField] private NavMeshSurface navMeshSurface;
+
+    private void Awake()
     {
-        
+        TurnOffAllLevelGrids();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BuildLevelGrid(int index)
     {
-        
+        LevelList[index].LevelGrid.SetActive(true);
+        navMeshSurface.gameObject.SetActive(true);
+        navMeshSurface.BuildNavMesh();
+    }
+
+    public void TurnOffAllLevelGrids()
+    {
+        navMeshSurface.gameObject.SetActive(false);
+        foreach (LevelData currentLevel in LevelList)
+        {
+            if ((currentLevel.LevelGrid != null) && (currentLevel.LevelGrid.activeSelf))
+            {
+                currentLevel.LevelGrid.SetActive(false);
+            }
+        }
+    }
+
+    public List<LevelData> GetLevelDataList()
+    {
+        return LevelList;
+    }
+
+    public LevelData GetLevelDataListItem(int index)
+    {
+        return LevelList[index];
     }
 }
