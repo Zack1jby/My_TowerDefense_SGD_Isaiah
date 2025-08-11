@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7031489faf70e48bf199e7dc002be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endpoint: {fileID: 0}
+  endPoint: {fileID: 0}
   animatorParam_IsWalking: IsWalking
   movementSpeed: 3.5
   damage: 1
