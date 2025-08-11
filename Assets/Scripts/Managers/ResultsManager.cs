@@ -4,9 +4,9 @@ using TMPro;
 
 public class ResultsManager : MonoBehaviour
 {
-    [SerializeField] private GameObject GameOverDisplay;
-    [SerializeField] private GameObject VictoryDisplay;
-    [SerializeField] private GameObject ResultsDisplay;
+    [SerializeField] private GameObject gameOverDisplay;
+    [SerializeField] private GameObject victoryDisplay;
+    [SerializeField] private GameObject resultsDisplay;
     [SerializeField] private TextMeshProUGUI tallyHealthRecordText;
     [SerializeField] private TextMeshProUGUI tallyMoneyRecordText;
     [SerializeField] private TextMeshProUGUI tallyWavesRecordText;

@@ -3178,9 +3178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249973c789b970747be681c6d32b7b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOverDisplay: {fileID: 1222930944}
-  VictoryDisplay: {fileID: 198801694}
-  ResultsDisplay: {fileID: 225349463}
+  gameOverDisplay: {fileID: 1222930944}
+  victoryDisplay: {fileID: 198801694}
+  resultsDisplay: {fileID: 225349463}
   tallyHealthRecordText: {fileID: 1894468856}
   tallyMoneyRecordText: {fileID: 1645817451}
   tallyWavesRecordText: {fileID: 660375420}
