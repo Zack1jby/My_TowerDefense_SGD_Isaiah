@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 35855394}
   - component: {fileID: 35855397}
   m_Layer: 5
-  m_Name: CatapultButton
+  m_Name: WizardTowerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fac4a7139671a5d46a6dd97e28bf50a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 645477201e45020439d43a12cb3f35ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2245,7 +2245,7 @@ GameObject:
   - component: {fileID: 124439883}
   - component: {fileID: 124439882}
   m_Layer: 5
-  m_Name: BallistaCostText
+  m_Name: BallistaTowerCostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13965,7 +13965,7 @@ GameObject:
   - component: {fileID: 728070840}
   - component: {fileID: 728070839}
   m_Layer: 5
-  m_Name: CatapultCostText
+  m_Name: WizardTowerCostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16564,7 +16564,7 @@ GameObject:
   - component: {fileID: 854198516}
   - component: {fileID: 854198515}
   m_Layer: 5
-  m_Name: CannonCostText
+  m_Name: CatapultTowerCostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29024,7 +29024,7 @@ GameObject:
   - component: {fileID: 1541238287}
   - component: {fileID: 1541238290}
   m_Layer: 5
-  m_Name: CannonButton
+  m_Name: CatapultTowerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33105,7 +33105,7 @@ GameObject:
   - component: {fileID: 1730031454}
   - component: {fileID: 1730031457}
   m_Layer: 5
-  m_Name: BallistaButton
+  m_Name: BallistaTowerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41921,7 +41921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2144130145
 Transform:
   m_ObjectHideFlags: 0
