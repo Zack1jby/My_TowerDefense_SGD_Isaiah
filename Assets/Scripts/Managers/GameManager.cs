@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public WaveManager WaveTracker;
     public ResultsManager ResultsTracker;
     public LevelManager LevelTracker;
+    public MenuManager MenuTracker;
 
     private void Awake()
     {
@@ -27,13 +28,13 @@ public class GameManager : MonoBehaviour
         WaveTracker = GetComponent<WaveManager>();
         ResultsTracker = GetComponent<ResultsManager>();
         LevelTracker = GetComponent<LevelManager>();
+        MenuTracker = GetComponent<MenuManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ClearLevels();
-        BuildLevel(0);
     }
 
     // Update is called once per frame
