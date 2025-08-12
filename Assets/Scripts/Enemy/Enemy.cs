@@ -94,6 +94,11 @@ public class Enemy : MonoBehaviour
         agent.speed = newSpeed;
     }
 
+    public void ResetCurrentMovementSpeed()
+    {
+        agent.speed = baseMovementSpeed;
+    }
+
     public bool GetIsSlowed()
     {
         return isSlowed;
