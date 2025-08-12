@@ -16,35 +16,39 @@ public struct SpawnData
 [System.Serializable]
 public struct WaveData
 {
-    public float TimeBeforeWave;
     public List<SpawnData> EnemyData;
 }
 
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] private GameObject enemyContainer;
+    [SerializeField] private GameObject startWaveButton;
     private List<WaveData> currentLevelWaveData;
     private int currentWaveCount;
-    private bool isNextWaveReady = true;
+    private bool isCurrentWaveDoneSpawning;
+    private bool isNextWaveReady;
     private bool isLevelFinished;
 
     public void StartWaves(List<WaveData> levelWaveData)
     {
+        SetIsNextWaveReady(false);
         isLevelFinished = false;
+        isCurrentWaveDoneSpawning = true;
         currentWaveCount = 0;
         currentLevelWaveData = levelWaveData;
+        StopCoroutine(StartLevelWaves());
         StartCoroutine(StartLevelWaves());
     }
 
     private IEnumerator StartLevelWaves()
     {
+        SetStartWaveButtonActive(true);
         foreach (WaveData currentWave in currentLevelWaveData)
         {
             yield return new WaitUntil(() => isNextWaveReady);
             StartCoroutine(StartWave(currentWave.EnemyData));
-            currentWaveCount++;
         }
-        yield return new WaitUntil(() => isNextWaveReady);
+        yield return new WaitUntil(() => GetIsWaveFinished());
         isLevelFinished = true;
     }
 
@@ -69,7 +73,9 @@ public class WaveManager : MonoBehaviour
 
     private IEnumerator StartWave(List<SpawnData> currentWaveEnemyData)
     {
-        isNextWaveReady = false;
+        SetStartWaveButtonActive(false);
+        SetIsNextWaveReady(false);
+        isCurrentWaveDoneSpawning = false;
         foreach (SpawnData currentEnemyToSpawn in currentWaveEnemyData)
         {
             yield return new WaitForSeconds(currentEnemyToSpawn.TimeBeforeSpawn);
@@ -82,12 +88,38 @@ public class WaveManager : MonoBehaviour
                 SpawnEnemy(currentEnemyToSpawn.EnemyToSpawn, currentEnemyToSpawn.SpawnPoint, currentEnemyToSpawn.EndPoint);
             }
         }
-        isNextWaveReady = true;
+        currentWaveCount++;
+        isCurrentWaveDoneSpawning = true;
+        yield return new WaitUntil(() => GetIsWaveFinished());
+        if (!IsOnLastWave()) 
+        {
+            SetStartWaveButtonActive(true);
+        }
+    }
+
+    private void SetStartWaveButtonActive(bool active)
+    {
+        startWaveButton.SetActive(active);
+    }
+
+    public void SetIsNextWaveReady(bool isNextWaveReady)
+    {
+        this.isNextWaveReady = isNextWaveReady;
     }
 
     public int GetCurrentWaveCount()
     {
         return currentWaveCount;
+    }
+
+    private bool IsOnLastWave()
+    {
+        return currentWaveCount == GetLevelWaveCount();
+    }
+
+    private bool GetIsWaveFinished()
+    {
+        return isCurrentWaveDoneSpawning && enemyContainer.GetComponentsInChildren<Enemy>().Length == 0;
     }
 
     public bool GetIsLevelFinished()
