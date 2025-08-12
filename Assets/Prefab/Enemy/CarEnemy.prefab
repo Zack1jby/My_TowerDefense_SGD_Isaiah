@@ -274,9 +274,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 0}
   animatorParam_IsWalking: 
-  movementSpeed: 3.5
+  baseMovementSpeed: 1.5
   damage: 1
-  maxHealth: 2
+  maxHealth: 40
   currencyDropAmount: 30
 --- !u!136 &2630363114045176744
 CapsuleCollider:

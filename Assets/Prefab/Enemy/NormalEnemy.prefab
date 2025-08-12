@@ -125,8 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 0}
   animatorParam_IsWalking: IsWalking
-  movementSpeed: 3.5
-  damage: 1
+  baseMovementSpeed: 3.5
+  damage: 2
   maxHealth: 10
   currencyDropAmount: 10
 --- !u!95 &5916726708920724800
