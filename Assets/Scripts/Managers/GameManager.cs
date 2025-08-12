@@ -51,9 +51,11 @@ public class GameManager : MonoBehaviour
 
     private void BuildLevel(int index)
     {
+        int startingPlayerCurrency = LevelTracker.GetLevelDataListItem(index).StartingPlayerCurrency;
         List<WaveData> levelWaveData = LevelTracker.GetLevelDataListItem(index).LevelWaveData;
 
         LevelTracker.BuildLevelGrid(index);
+        PlayerCurrency.SetCurrencyHeld(startingPlayerCurrency);
         WaveTracker.StartWaves(levelWaveData);
     }
 

@@ -6,6 +6,7 @@ using Unity.AI.Navigation;
 public struct LevelData
 {
     public GameObject LevelGrid;
+    public int StartingPlayerCurrency;
     public List<WaveData> LevelWaveData;
 }
 
