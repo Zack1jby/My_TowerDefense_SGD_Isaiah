@@ -14,11 +14,22 @@ public class CurrencyManager : MonoBehaviour
     public void UpdateCurrency(int currencyAdded)
     {
         currencyHeld += currencyAdded;
-        currencyText.text = $"${currencyHeld}";
+        UpdateCurrencyText();
+    }
+
+    public void SetCurrencyHeld(int newHeldCurrencyAmount)
+    {
+        currencyHeld = newHeldCurrencyAmount;
+        UpdateCurrencyText();
     }
 
     public int GetCurrencyHeld()
     {
         return currencyHeld;
+    }
+
+    private void UpdateCurrencyText()
+    {
+        currencyText.text = $"${currencyHeld}";
     }
 }
