@@ -90,8 +90,8 @@ public class GameManager : MonoBehaviour
     {
         if (currentLevelIndex < LevelTracker.GetLevelDataList().Count)
         {
-            BuildLevel(newLevelIndex);
             currentLevelIndex = newLevelIndex;
+            BuildLevel(newLevelIndex);
         }
     }
 

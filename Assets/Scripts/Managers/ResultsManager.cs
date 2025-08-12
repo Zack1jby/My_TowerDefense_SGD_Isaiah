@@ -12,10 +12,10 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tallyMoneyRecordText;
     [SerializeField] private TextMeshProUGUI tallyWavesRecordText;
     [SerializeField] private TextMeshProUGUI resultsRankText;
-    private int rankEarnA = 1750;
-    private int rankEarnB = 1400;
-    private int rankEarnC = 1200;
-    private int rankEarnD = 1000;
+    private int rankEarnA = 1100;
+    private int rankEarnB = 1000;
+    private int rankEarnC = 750;
+    private int rankEarnD = 500;
     private int tallyHealthScore;
     private int tallyMoneyScore;
     private int tallyWaveScore;

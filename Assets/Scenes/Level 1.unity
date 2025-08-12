@@ -9230,7 +9230,7 @@ MonoBehaviour:
         TimeBeforeSpawn: 2.5
         SpawnPoint: {fileID: 2030979409}
         EndPoint: {fileID: 1735088053}
-  - LevelGrid: {fileID: 2001022271}
+  - LevelGrid: {fileID: 1124387151}
     StartingPlayerCurrency: 50
     MaxTowerRank: 2
     LevelWaveData:
@@ -9511,18 +9511,12 @@ MonoBehaviour:
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         TimeBeforeSpawn: 3
         SpawnPoint: {fileID: 1933641314}
         EndPoint: {fileID: 550676031}
       - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
         CanHoldEnemies: 1
         HeldEnemies:
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
-        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
@@ -13604,7 +13598,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
