@@ -69,7 +69,7 @@ public class TowerPlaceManager : MonoBehaviour
             towerPreview.GetComponent<SphereCollider>().enabled = false;
         }
     }
-    // Instatiate into gameobject like with enemies, for easy cleanup!
+    
     private void OnPlaceTower(InputAction.CallbackContext context)
     {
         if (isPlacingTower && isTileSelected)
