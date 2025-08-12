@@ -40,6 +40,8 @@ public class WaveManager : MonoBehaviour
 
     public void StartWaves(List<WaveData> levelWaveData)
     {
+        isLevelFinished = false;
+        currentWaveCount = 0;
         currentLevelWaveData = levelWaveData;
         StartCoroutine(StartLevelWaves());
     }

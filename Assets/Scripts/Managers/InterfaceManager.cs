@@ -4,11 +4,21 @@ using TMPro;
 
 public class InterfaceManager : MonoBehaviour
 {
+    [SerializeField] private GameObject userInterface;
     [SerializeField] private List<BuildTowerButton> buildTowerButtons;
 
     private void Awake()
     {
-        PrepareAllBuildButtonTexts(buildTowerButtons);
+        SetUserInterfaceActive(false);
+    }
+
+    public void SetUserInterfaceActive(bool active)
+    {
+        userInterface.SetActive(active);
+        if (active)
+        {
+            PrepareAllBuildButtonTexts(buildTowerButtons);
+        }
     }
 
     private void PrepareBuildButtonText(BuildTowerButton buildTowerButton)

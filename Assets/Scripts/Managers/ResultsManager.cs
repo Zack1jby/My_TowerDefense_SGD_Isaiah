@@ -23,10 +23,7 @@ public class ResultsManager : MonoBehaviour
 
     private void Awake()
     {
-        gameOverDisplay.SetActive(false);
-        victoryDisplay.SetActive(false);
-        resultsDisplay.SetActive(false);
-        gameFinishButtons.SetActive(false);
+        HideResults();
     }
 
     private void Update()
@@ -37,6 +34,14 @@ public class ResultsManager : MonoBehaviour
     public bool SetIsPlayerWinner(bool isPlayerWinner)
     {
         return this.isPlayerWinner = isPlayerWinner;
+    }
+
+    public void HideResults()
+    {
+        gameOverDisplay.SetActive(false);
+        victoryDisplay.SetActive(false);
+        resultsDisplay.SetActive(false);
+        gameFinishButtons.SetActive(false);
     }
 
     public void ShowResults()
