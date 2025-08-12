@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected Transform endPoint;
     [SerializeField] protected string animatorParam_IsWalking;
     [SerializeField] protected float movementSpeed = 3.5f;
+    private bool isSlowed;
     [SerializeField] protected int damage = 1;
     [SerializeField] protected int maxHealth = 10;
     protected int currentHealth;
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         agent.speed = movementSpeed;
+        isSlowed = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -80,5 +82,25 @@ public class Enemy : MonoBehaviour
     public void DropCurrency()
     {
         GameManager.Instance.PlayerCurrency.UpdateCurrency(currencyDropAmount);
+    }
+
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float newSpeed)
+    {
+        movementSpeed = newSpeed;
+    }
+
+    public bool GetIsSlowed()
+    {
+        return isSlowed;
+    }
+
+    public void SetIsSlowed(bool isSlowed)
+    {
+        this.isSlowed = isSlowed;
     }
 }
