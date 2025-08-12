@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     protected Animator animator;
     [SerializeField] protected Transform endPoint;
     [SerializeField] protected string animatorParam_IsWalking;
-    [SerializeField] protected float movementSpeed = 3.5f;
+    [SerializeField] protected float baseMovementSpeed = 3.5f;
     private bool isSlowed;
     [SerializeField] protected int damage = 1;
     [SerializeField] protected int maxHealth = 10;
@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
-        agent.speed = movementSpeed;
+        agent.speed = baseMovementSpeed;
         isSlowed = false;
     }
 
@@ -84,14 +84,14 @@ public class Enemy : MonoBehaviour
         GameManager.Instance.PlayerCurrency.UpdateCurrency(currencyDropAmount);
     }
 
-    public float GetMovementSpeed()
+    public float GetCurrentMovementSpeed()
     {
-        return movementSpeed;
+        return agent.speed;
     }
 
-    public void SetMovementSpeed(float newSpeed)
+    public void SetCurrentMovementSpeed(float newSpeed)
     {
-        movementSpeed = newSpeed;
+        agent.speed = newSpeed;
     }
 
     public bool GetIsSlowed()
