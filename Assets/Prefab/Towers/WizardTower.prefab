@@ -108,7 +108,7 @@ MonoBehaviour:
   towerCost: 40
   towerRank: 2
   magicRadiusPrefab: {fileID: 1954839879518902680}
-  slowedDebuffStrength: 0.7
+  slowedDebuffStrength: 0.65
   slowedDebuffCooldown: 1
 --- !u!4 &3089580034161442764 stripped
 Transform:
