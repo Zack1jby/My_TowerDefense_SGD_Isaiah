@@ -121,6 +121,13 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
-        ReturnToMainMenu();
+        if (Application.isEditor)
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }
