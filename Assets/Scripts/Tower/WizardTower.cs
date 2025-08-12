@@ -1,16 +1,76 @@
 using UnityEngine;
+using System.Collections;
 
-public class WizardTower : MonoBehaviour
+public class WizardTower : Tower
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject magicRadiusPrefab;
+    [SerializeField] protected float slowedDebuffStrength = .7f;
+    [SerializeField] protected float slowedDebuffCooldown = 1f;
+
+    protected void Awake()
     {
-        
+        SetMagicRadiusActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        if (AreEnemiesInRange())
+        {
+            if (!IsMagicRadiusActive())
+            {
+                SetMagicRadiusActive(true);
+            }
+            SlowDownEnemies();
+            currentFireCooldown = FireCooldown;
+        }
+        else if (IsMagicRadiusActive())
+        {
+            SetMagicRadiusActive(false);
+        }
+    }
+
+    protected void SlowDownEnemies()
+    {
+        foreach (Enemy currentTargetEnemy in enemiesInRange)
+        {
+            FireAt(currentTargetEnemy);
+        }
+    }
+
+    protected override void FireAt(Enemy target)
+    {
+        if (!target.GetIsSlowed())
+        {
+            StartCoroutine(ApplySlowedDebuff(target));
+        }
+    }
+
+    protected IEnumerator ApplySlowedDebuff(Enemy target)
+    {
+        target.SetIsSlowed(true);
+        target.SetCurrentMovementSpeed(slowedDebuffStrength * target.GetCurrentMovementSpeed());
+        yield return new WaitForSeconds(slowedDebuffCooldown);
+        target.ResetCurrentMovementSpeed();
+        target.SetIsSlowed(false);
+    }
+
+    protected bool IsMagicRadiusActive()
+    {
+        return magicRadiusPrefab.activeSelf;
+    }
+
+    protected void SetMagicRadiusActive(bool isActive)
+    {
+        magicRadiusPrefab.SetActive(isActive);
+    }
+
+    protected bool AreEnemiesInRange()
+    {
+        return enemiesInRange.Count > 0;
+    }
+
+    protected override Enemy GetTargetEnemy()
+    {
+        return null;
     }
 }

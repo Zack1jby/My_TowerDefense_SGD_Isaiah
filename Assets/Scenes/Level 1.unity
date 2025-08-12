@@ -698,7 +698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 35855395}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 471486152}
+        m_TargetAssemblyTypeName: TowerPlaceManager, Assembly-CSharp
+        m_MethodName: StartPlacing
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2426230768102843766, guid: d5a5e577e8485fd4fa5092e8ba0b067d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &35855395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ee5099000f2d64c8e4323748c442d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heldTowerPrefab: {fileID: 0}
+  heldTowerPrefab: {fileID: 2426230768102843766, guid: d5a5e577e8485fd4fa5092e8ba0b067d, type: 3}
   buildButtonText: {fileID: 728070839}
 --- !u!1001 &36977538
 PrefabInstance:
@@ -8614,6 +8626,7 @@ MonoBehaviour:
   buildTowerButtons:
   - {fileID: 1730031457}
   - {fileID: 1541238290}
+  - {fileID: 35855397}
 --- !u!114 &471486155
 MonoBehaviour:
   m_ObjectHideFlags: 0
