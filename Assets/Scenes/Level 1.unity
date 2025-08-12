@@ -8662,7 +8662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelList:
   - LevelGrid: {fileID: 2144130144}
-    StartingPlayerCurrency: 50
+    StartingPlayerCurrency: 20
     LevelWaveData:
     - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
@@ -8776,7 +8776,7 @@ MonoBehaviour:
         SpawnPoint: {fileID: 247994881}
         EndPoint: {fileID: 997166722}
   - LevelGrid: {fileID: 875355935}
-    StartingPlayerCurrency: 70
+    StartingPlayerCurrency: 50
     LevelWaveData:
     - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
@@ -8785,18 +8785,311 @@ MonoBehaviour:
         TimeBeforeSpawn: 1
         SpawnPoint: {fileID: 1143519863}
         EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2.5
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1143519863}
+        EndPoint: {fileID: 1993481198}
   - LevelGrid: {fileID: 2001022271}
-    StartingPlayerCurrency: 80
+    StartingPlayerCurrency: 50
     LevelWaveData:
     - EnemyData:
       - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
-        TimeBeforeSpawn: 0
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.75
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.4
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.6
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.6
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.6
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.9
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.9
+        SpawnPoint: {fileID: 1990621957}
+        EndPoint: {fileID: 1736421671}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.9
         SpawnPoint: {fileID: 1990621957}
         EndPoint: {fileID: 1736421671}
   - LevelGrid: {fileID: 47300335}
-    StartingPlayerCurrency: 80
+    StartingPlayerCurrency: 70
     LevelWaveData:
     - EnemyData:
       - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
@@ -8808,33 +9101,427 @@ MonoBehaviour:
         TimeBeforeSpawn: 1
         SpawnPoint: {fileID: 2030979409}
         EndPoint: {fileID: 1735088053}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 2
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        TimeBeforeSpawn: 2.5
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        TimeBeforeSpawn: 2.5
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        TimeBeforeSpawn: 2.5
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        TimeBeforeSpawn: 2.5
+        SpawnPoint: {fileID: 2030979409}
+        EndPoint: {fileID: 1735088053}
   - LevelGrid: {fileID: 2001022271}
-    StartingPlayerCurrency: 100
+    StartingPlayerCurrency: 50
     LevelWaveData:
     - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
-        TimeBeforeSpawn: 0
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
         SpawnPoint: {fileID: 1933641314}
         EndPoint: {fileID: 550676031}
     - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
-        TimeBeforeSpawn: 0
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
         SpawnPoint: {fileID: 1887042280}
         EndPoint: {fileID: 1649845254}
     - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
-        TimeBeforeSpawn: 0
+        TimeBeforeSpawn: 1
         SpawnPoint: {fileID: 1933641314}
         EndPoint: {fileID: 550676031}
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        CanHoldEnemies: 0
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+    - EnemyData:
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
+        TimeBeforeSpawn: 1
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 2633005700508331317, guid: 80a511c39b5620e4e869224a712ad41f, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 4
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 1.5
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies: []
+        TimeBeforeSpawn: 0
+        SpawnPoint: {fileID: 1887042280}
+        EndPoint: {fileID: 1649845254}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        TimeBeforeSpawn: 3
+        SpawnPoint: {fileID: 1933641314}
+        EndPoint: {fileID: 550676031}
+      - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
+        CanHoldEnemies: 1
+        HeldEnemies:
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
+        - {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         TimeBeforeSpawn: 0
         SpawnPoint: {fileID: 1887042280}
         EndPoint: {fileID: 1649845254}
