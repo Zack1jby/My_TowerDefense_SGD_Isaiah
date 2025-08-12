@@ -1,5 +1,79 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3489668132823619499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7480717618770296630}
+    m_Modifications:
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737062407715134123, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+      propertyPath: m_Name
+      value: ArchMagicRadius
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+--- !u!4 &1009293297118718187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4498093571638984512, guid: c46425d7517e05147a395dfbcd7c5c27, type: 3}
+  m_PrefabInstance: {fileID: 3489668132823619499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6942967841195972829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,7 +84,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.35908
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.00679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50,10 +124,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
       propertyPath: m_Name
-      value: tower-square-build-d
+      value: ArchWizardTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1009293297118718187}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5831267112912645355}
   m_SourcePrefab: {fileID: 100100000, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
+--- !u!4 &7480717618770296630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
+  m_PrefabInstance: {fileID: 6942967841195972829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7825859389033506188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 43b601003214ccb4d95eae7ec0ff17ed, type: 3}
+  m_PrefabInstance: {fileID: 6942967841195972829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &5831267112912645355
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7825859389033506188}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.7
+  m_Center: {x: 0, y: 0, z: 0}
