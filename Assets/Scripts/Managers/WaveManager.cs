@@ -28,16 +28,6 @@ public class WaveManager : MonoBehaviour
     private bool isNextWaveReady = true;
     private bool isLevelFinished;
 
-    void Start()
-    {
-        
-    }
-    
-    void Update()
-    {
-        
-    }
-
     public void StartWaves(List<WaveData> levelWaveData)
     {
         isLevelFinished = false;
