@@ -14,6 +14,8 @@ public class TowerPlaceManager : MonoBehaviour
 
     [SerializeField] private bool isPlacingTower;
     private bool isTileSelected = false;
+
+    [SerializeField] private GameObject towerContainer;
     void Start()
     {
         
@@ -67,12 +69,12 @@ public class TowerPlaceManager : MonoBehaviour
             towerPreview.GetComponent<SphereCollider>().enabled = false;
         }
     }
-
+    // Instatiate into gameobject like with enemies, for easy cleanup!
     private void OnPlaceTower(InputAction.CallbackContext context)
     {
         if (isPlacingTower && isTileSelected)
         {
-            Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity);
+            Instantiate(currentTowerPrefabToSpawn, towerPlacementPosition, Quaternion.identity, towerContainer.transform);
             Destroy(towerPreview);
             GameManager.Instance.PlayerCurrency.UpdateCurrency(-GetTowerCost(currentTowerPrefabToSpawn));
             currentTowerPrefabToSpawn = null;
@@ -88,5 +90,14 @@ public class TowerPlaceManager : MonoBehaviour
     private bool CanAffordTowerCost(GameObject towerPrefab)
     {
         return GameManager.Instance.PlayerCurrency.GetCurrencyHeld() >= GetTowerCost(towerPrefab);
+    }
+
+    public void CleanUpTowers()
+    {
+        Tower[] towersToClean = towerContainer.GetComponentsInChildren<Tower>();
+        foreach (Tower t in  towersToClean)
+        {
+            Destroy(t.gameObject);
+        }
     }
 }
