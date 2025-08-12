@@ -37,4 +37,9 @@ public class InterfaceManager : MonoBehaviour
             PrepareBuildButtonText(buildTowerButton);
         }
     }
+
+    public List<BuildTowerButton> GetBuildTowerButtons()
+    {
+        return buildTowerButtons;
+    }
 }
