@@ -8664,8 +8664,7 @@ MonoBehaviour:
   - LevelGrid: {fileID: 2144130144}
     StartingPlayerCurrency: 50
     LevelWaveData:
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
@@ -8684,8 +8683,7 @@ MonoBehaviour:
         TimeBeforeSpawn: 2
         SpawnPoint: {fileID: 247994881}
         EndPoint: {fileID: 997166722}
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
@@ -8716,8 +8714,7 @@ MonoBehaviour:
         TimeBeforeSpawn: 1.75
         SpawnPoint: {fileID: 247994881}
         EndPoint: {fileID: 997166722}
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
@@ -8781,8 +8778,7 @@ MonoBehaviour:
   - LevelGrid: {fileID: 875355935}
     StartingPlayerCurrency: 70
     LevelWaveData:
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
@@ -8792,8 +8788,7 @@ MonoBehaviour:
   - LevelGrid: {fileID: 2001022271}
     StartingPlayerCurrency: 80
     LevelWaveData:
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 6123194581740964070, guid: 74a5a8f8256c30f47aec81fa66ebe455, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
@@ -8803,8 +8798,7 @@ MonoBehaviour:
   - LevelGrid: {fileID: 47300335}
     StartingPlayerCurrency: 80
     LevelWaveData:
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1424670985346003020, guid: 4ef78de4923c0c64781be3a79f8f1819, type: 3}
         CanHoldEnemies: 1
         HeldEnemies:
@@ -8817,24 +8811,21 @@ MonoBehaviour:
   - LevelGrid: {fileID: 2001022271}
     StartingPlayerCurrency: 100
     LevelWaveData:
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
         TimeBeforeSpawn: 0
         SpawnPoint: {fileID: 1933641314}
         EndPoint: {fileID: 550676031}
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
         TimeBeforeSpawn: 0
         SpawnPoint: {fileID: 1887042280}
         EndPoint: {fileID: 1649845254}
-    - TimeBeforeWave: 0
-      EnemyData:
+    - EnemyData:
       - EnemyToSpawn: {fileID: 1983635594689193154, guid: d2572388207c2d64ab5af5c43eab404e, type: 3}
         CanHoldEnemies: 0
         HeldEnemies: []
