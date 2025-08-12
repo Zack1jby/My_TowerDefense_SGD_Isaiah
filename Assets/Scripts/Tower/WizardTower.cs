@@ -14,6 +14,8 @@ public class WizardTower : Tower
 
     protected override void Update()
     {
+        ClearDestroyedEnemies();
+
         if (AreEnemiesInRange())
         {
             if (!IsMagicRadiusActive())
@@ -39,7 +41,7 @@ public class WizardTower : Tower
 
     protected override void FireAt(Enemy target)
     {
-        if (!target.GetIsSlowed())
+        if (target != null && !target.GetIsSlowed())
         {
             StartCoroutine(ApplySlowedDebuff(target));
         }
@@ -50,8 +52,11 @@ public class WizardTower : Tower
         target.SetIsSlowed(true);
         target.SetCurrentMovementSpeed(slowedDebuffStrength * target.GetCurrentMovementSpeed());
         yield return new WaitForSeconds(slowedDebuffCooldown);
-        target.ResetCurrentMovementSpeed();
-        target.SetIsSlowed(false);
+        if (target != null) 
+        {
+            target.ResetCurrentMovementSpeed();
+            target.SetIsSlowed(false);
+        }
     }
 
     protected bool IsMagicRadiusActive()
