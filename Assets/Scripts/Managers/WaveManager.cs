@@ -63,7 +63,7 @@ public class WaveManager : MonoBehaviour
     {
         GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation, enemyContainer.transform);
         CarrierEnemy enemy = enemyInstance.GetComponent<CarrierEnemy>();
-        enemy.Initialize(endPoint, heldEnemies);
+        enemy.Initialize(endPoint, heldEnemies, enemyContainer.transform);
     }
 
     public int GetLevelWaveCount()
