@@ -5,11 +5,6 @@ public class BallistaTower : Tower
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private Transform arrowHead;
 
-    protected override void Update()
-    {
-        base.Update();
-    }
-
     protected override void FireAt(Enemy target)
     {
         if (arrowPrefab != null)
