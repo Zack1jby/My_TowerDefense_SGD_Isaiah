@@ -9,6 +9,7 @@ public abstract class Tower : MonoBehaviour
     protected float currentFireCooldown = 0.0f;
     protected List<Enemy> enemiesInRange = new List<Enemy>();
     [SerializeField] protected int towerCost;
+    [SerializeField] protected int towerRank;
 
     protected virtual void Update()
     {
@@ -57,6 +58,11 @@ public abstract class Tower : MonoBehaviour
     public int GetTowerCost()
     {
         return towerCost;
+    }
+
+    public int GetTowerRank()
+    {
+        return towerRank;
     }
 
 }

@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FireCooldown: 1
   towerCost: 30
+  towerRank: 2
   magicRadiusPrefab: {fileID: 1954839879518902680}
   slowedDebuffStrength: 0.7
   slowedDebuffCooldown: 1

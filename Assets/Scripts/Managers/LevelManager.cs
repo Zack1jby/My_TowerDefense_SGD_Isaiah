@@ -7,6 +7,7 @@ public struct LevelData
 {
     public GameObject LevelGrid;
     public int StartingPlayerCurrency;
+    public int MaxTowerRank;
     public List<WaveData> LevelWaveData;
 }
 

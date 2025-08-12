@@ -95,6 +95,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public LevelData GetCurrentLevelData()
+    {
+        return LevelTracker.GetLevelDataListItem(currentLevelIndex);
+    }
+
     public void RestartCurrentLevel()
     {
         BuildLevel(currentLevelIndex);
